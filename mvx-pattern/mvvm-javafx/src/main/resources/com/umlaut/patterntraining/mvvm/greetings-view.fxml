@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0"
+      prefWidth="383.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.umlaut.patterntraining.mvvm.View">
+    <Label prefHeight="47.0" prefWidth="388.0" text="Name?">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="textFieldName" prefHeight="47.0" prefWidth="383.0">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextField>
+    <Button fx:id="buttonGreetingsToComputer" mnemonicParsing="false" onAction="#onGreetingsButtonClicked" prefHeight="46.0"
+            prefWidth="383.0" text="Gruß an den Computer">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Label fx:id="labelGreetingsFromComputer" prefHeight="50.0" prefWidth="379.0"/>
+    <Label fx:id="labelTimeOfDay" prefHeight="46.0" prefWidth="381.0">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+</VBox>
