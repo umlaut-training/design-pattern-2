@@ -146,7 +146,6 @@ public class StrategyTest {
                         standardItemBuilder().withName("Strawberry").build()
                 );
 
-                /*
                 // when
                 stockPrinter.setStrategy(instance);
                 stockPrinter.print(stock);
@@ -156,7 +155,6 @@ public class StrategyTest {
 
                 assertThat(indexCaptor.getAllValues()).containsExactly(1, 2, 3, 4);
                 assertThat(itemCaptor.getAllValues()).extracting(item -> item.getKey().getName()).containsExactly("Apple", "Egg", "Pear", "Strawberry");
-                */
 
                 reset(itemPrinter);
             } catch (NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException e) {

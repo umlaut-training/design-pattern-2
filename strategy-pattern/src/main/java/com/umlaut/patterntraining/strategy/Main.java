@@ -28,5 +28,8 @@ public class Main {
         System.out.println("Default order (Insertion Order):");
         sp.print(stock);
 
+        System.out.println("Ordered By Name:");
+        sp.setStrategy(new ByNameStrategy());
+        sp.print(stock);
     }
 }
